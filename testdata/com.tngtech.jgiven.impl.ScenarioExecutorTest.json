@@ -1,0 +1,686 @@
+{
+  "className": "com.tngtech.jgiven.impl.ScenarioExecutorTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.impl.ScenarioExecutorTest",
+      "testMethodName": "step_methods_can_have_primitive_arrays_as_parameters",
+      "description": "step methods can have primitive arrays as parameters",
+      "tags": [
+        {
+          "name": "Issue",
+          "value": "#1",
+          "description": "Issue numbers correspond to Issues in GitHub",
+          "prependType": true
+        },
+        {
+          "name": "Feature",
+          "value": "Step Parameters",
+          "description": "Steps can have parameters",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [
+        "type",
+        "array"
+      ],
+      "casesAsTable": true,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "byte",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1, 2, 3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "byte",
+            "1, 2, 3"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 2,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "char",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "a, b, c",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "char",
+            "a, b, c"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 3,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "short",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1, 2, 3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "short",
+            "1, 2, 3"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 4,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "int",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1, 2, 3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "int",
+            "1, 2, 3"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 5,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "long",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1, 2, 3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "long",
+            "1, 2, 3"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 6,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "double",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1.0, 2.0, 3.0",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "double",
+            "1.0, 2.0, 3.0"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 7,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "float",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1.0, 2.0, 3.0",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "float",
+            "1.0, 2.0, 3.0"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 8,
+          "steps": [
+            {
+              "name": "a step method with a primitive $ array $ as parameter",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a step method with a primitive",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "boolean",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "array",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "true, false",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                },
+                {
+                  "value": "as parameter",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "no exeception is thrown",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "no exeception is thrown",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "boolean",
+            "true, false"
+          ],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.impl.ScenarioExecutorTest",
+      "testMethodName": "methods_called_during_stage_construction_are_ignored_in_the_report",
+      "description": "methods called during stage construction are ignored in the report",
+      "tags": [],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "some stage with method called during construction",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "some stage with method called during construction",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the method does not appear in the report",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the method does not appear in the report",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

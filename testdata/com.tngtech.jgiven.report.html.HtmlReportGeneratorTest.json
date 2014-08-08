@@ -1,0 +1,128 @@
+{
+  "className": "com.tngtech.jgiven.report.html.HtmlReportGeneratorTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.report.html.HtmlReportGeneratorTest",
+      "testMethodName": "the_HTML_report_generator_works_as_expected",
+      "description": "the HTML report generator works as expected",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Html Report Generation",
+          "description": "HTML reports can be generated",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the reports exist as JSON files",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the reports exist as JSON files",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "a custom CSS file",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a custom CSS file",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the HTML report generator is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the HTML report generator is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an index file exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an index file exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the custom CSS file is copied to the target directory",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the custom CSS file is copied to the target directory",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an HTML file exists for each test class",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an HTML file exists for each test class",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

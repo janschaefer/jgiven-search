@@ -1,0 +1,86 @@
+{
+  "className": "com.tngtech.jgiven.junit.de.DeSzenarioTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.junit.de.DeSzenarioTest",
+      "testMethodName": "Szenarien_können_in_deutsch_geschrieben_werden",
+      "description": "Szenarien können in deutsch geschrieben werden",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "German Scenarios",
+          "description": "Scenarios can be written in German",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "ein deutsches Projekt",
+              "words": [
+                {
+                  "value": "Gegeben",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "ein deutsches Projekt",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "JGiven verwendet wird",
+              "words": [
+                {
+                  "value": "Wenn",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "JGiven verwendet wird",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "die Szenarien in deutsch geschrieben werden",
+              "words": [
+                {
+                  "value": "und",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "die Szenarien in deutsch geschrieben werden",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "generiert JGiven deutsche Berichte",
+              "words": [
+                {
+                  "value": "Dann",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "generiert JGiven deutsche Berichte",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "className": "com.tngtech.jgiven.report.html.FrameBaseHtmlReportGeneratorTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.report.html.FrameBaseHtmlReportGeneratorTest",
+      "testMethodName": "the_frame_based_reporter_generates_one_file_for_each_tag",
+      "description": "the frame based reporter generates one file for each tag",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Html Report Generation",
+          "description": "HTML reports can be generated",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "Tags",
+          "description": "Scenarios can be tagged with annotations",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the first scenario has tag",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the first scenario has tag",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report exist as JSON file",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report exist as JSON file",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the frame based HTML reporter is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the frame based HTML reporter is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "a file with name $ exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a file with name",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag.html",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.report.html.FrameBaseHtmlReportGeneratorTest",
+      "testMethodName": "the_frame_based_reporter_generates_one_file_for_each_tag_value",
+      "description": "the frame based reporter generates one file for each tag value",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Html Report Generation",
+          "description": "HTML reports can be generated",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "Tags",
+          "description": "Scenarios can be tagged with annotations",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report has $ scenarios",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "scenarios",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "scenario $ has tag $ with value $",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "scenario",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has tag",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with value",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "123",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "scenario $ has tag $ with value $",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "scenario",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has tag",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with value",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "456",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report exist as JSON file",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report exist as JSON file",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the frame based HTML reporter is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the frame based HTML reporter is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "a file with name $ exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a file with name",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag-123.html",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "a file with name $ exists",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a file with name",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag-456.html",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.report.html.FrameBaseHtmlReportGeneratorTest",
+      "testMethodName": "the_frame_based_reporter_generates_one_file_for_each_test_class",
+      "description": "the frame based reporter generates one file for each test class",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Html Report Generation",
+          "description": "HTML reports can be generated",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [
+        "n"
+      ],
+      "casesAsTable": true,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "$ report models",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "0",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "report models",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the reports exist as JSON files",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the reports exist as JSON files",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the frame based HTML reporter is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the frame based HTML reporter is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an index file exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an index file exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an HTML file exists for each test class",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an HTML file exists for each test class",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "0"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 2,
+          "steps": [
+            {
+              "name": "$ report models",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "report models",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the reports exist as JSON files",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the reports exist as JSON files",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the frame based HTML reporter is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the frame based HTML reporter is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an index file exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an index file exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an HTML file exists for each test class",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an HTML file exists for each test class",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "1"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 3,
+          "steps": [
+            {
+              "name": "$ report models",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "report models",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the reports exist as JSON files",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the reports exist as JSON files",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the frame based HTML reporter is executed",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the frame based HTML reporter is executed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an index file exists",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an index file exists",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an HTML file exists for each test class",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an HTML file exists for each test class",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "3"
+          ],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

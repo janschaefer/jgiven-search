@@ -1,0 +1,1390 @@
+{
+  "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "after_stage_methods_of_stages_following_failing_stages_are_ignored",
+      "description": "after stage methods of stages following failing stages are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test with $ steps",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test with",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "steps",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test has $ failing stages",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "failing stages",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "stage $ has a failing after stage method",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "stage",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has a failing after stage method",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ fails",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test fails",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as failed",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as failed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as skipped",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as skipped",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "passing_tests_annotated_with_NotImplementedYet_are_ignored",
+      "description": "passing tests annotated with NotImplementedYet are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "NotImplementedYet Annotation",
+          "description": "tests can be annotated with @NotImplementedYet",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a passing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a passing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is annotated with NotImplementedYet",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is annotated with NotImplementedYet",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is ignored",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is ignored",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "failing_tests_annotated_with_NotImplementedYet_with_failIfPassed_set_to_true_are_ignored",
+      "description": "failing tests annotated with NotImplementedYet with failIfPassed set to true are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Issue",
+          "value": "#4",
+          "description": "Issue numbers correspond to Issues in GitHub",
+          "prependType": true
+        },
+        {
+          "name": "Feature",
+          "value": "NotImplementedYet Annotation",
+          "description": "tests can be annotated with @NotImplementedYet",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is annotated with NotImplementedYet",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is annotated with NotImplementedYet",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "failIfPassed set to true",
+              "words": [
+                {
+                  "value": "with",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "failIfPassed set to true",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is ignored",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is ignored",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "the_error_message_of_a_failing_step_is_reported",
+      "description": "the error message of a failing step is reported",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the case is marked as failed",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the case is marked as failed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an error message is stored in the report",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an error message is stored in the report",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "failing_tests_annotated_with_NotImplementedYet_are_ignored",
+      "description": "failing tests annotated with NotImplementedYet are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "NotImplementedYet Annotation",
+          "description": "tests can be annotated with @NotImplementedYet",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is annotated with NotImplementedYet",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is annotated with NotImplementedYet",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is ignored",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is ignored",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "passing_steps_before_failing_steps_are_reported_as_passed",
+      "description": "passing steps before failing steps are reported as passed",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test with $ steps",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test with",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "steps",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ fails",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as passed",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as passed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as failed",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as failed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "all_steps_of_stages_following_failing_stages_are_ignored",
+      "description": "all steps of stages following failing stages are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test with $ steps",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test with",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "steps",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test has $ failing stages",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "failing stages",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ fails",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test fails",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as failed",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as failed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as skipped",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as skipped",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "tag_annotations_appear_in_the_report_model",
+      "description": "tag annotations appear in the report model",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "Tags",
+          "description": "Scenarios can be tagged with annotations",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test has a tag annotation named",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test has a tag annotation named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report model contains a tag named",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report model contains a tag named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "TestTag",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "failing_tests_annotated_with_NotImplementedYet_with_executeSteps_set_to_true_are_ignored",
+      "description": "failing tests annotated with NotImplementedYet with executeSteps set to true are ignored",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "NotImplementedYet Annotation",
+          "description": "tests can be annotated with @NotImplementedYet",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is annotated with NotImplementedYet",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is annotated with NotImplementedYet",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "executeSteps set to true",
+              "words": [
+                {
+                  "value": "with",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "executeSteps set to true",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is ignored",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is ignored",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "steps_following_failing_steps_are_reported_as_skipped",
+      "description": "steps following failing steps are reported as skipped",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test with $ steps",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test with",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "steps",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ fails",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "fails",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as failed",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as failed",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as skipped",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as skipped",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is reported as skipped",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is reported as skipped",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.junit.JUnitExecutionTest",
+      "testMethodName": "passing_tests_annotated_with_NotImplementedYet_with_failIfPassed_set_to_true_fail",
+      "description": "passing tests annotated with NotImplementedYet with failIfPassed set to true fail",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "JUnit",
+          "description": "tests can be be executed with JUnit",
+          "prependType": false
+        },
+        {
+          "name": "Issue",
+          "value": "#4",
+          "description": "Issue numbers correspond to Issues in GitHub",
+          "prependType": true
+        },
+        {
+          "name": "Feature",
+          "value": "NotImplementedYet Annotation",
+          "description": "tests can be annotated with @NotImplementedYet",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a passing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a passing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is annotated with NotImplementedYet",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is annotated with NotImplementedYet",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "failIfPassed set to true",
+              "words": [
+                {
+                  "value": "with",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "failIfPassed set to true",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with JUnit",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with JUnit",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test fails with message",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test fails with message",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "Test succeeded, but failIfPassed set to true",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

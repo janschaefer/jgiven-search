@@ -1,0 +1,1355 @@
+{
+  "className": "com.tngtech.jgiven.report.text.PlainTextScenarioWriterTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.report.text.PlainTextScenarioWriterTest",
+      "testMethodName": "ignored_steps_marked_in_text_reports",
+      "description": "ignored steps marked in text reports",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Plain Text Report",
+          "description": "Plain text reports can be generated",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [
+        "status",
+        "expectedText"
+      ],
+      "casesAsTable": true,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is named",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ has status",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has status",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "PASSED",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "PASSED",
+            "something happens"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 2,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is named",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ has status",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has status",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "FAILED",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens (failed)",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "FAILED",
+            "something happens (failed)"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 3,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is named",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ has status",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has status",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "SKIPPED",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens (skipped)",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "SKIPPED",
+            "something happens (skipped)"
+          ],
+          "success": true
+        },
+        {
+          "caseNr": 4,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ is named",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "is named",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "step $ has status",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has status",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "NOT_IMPLEMENTED_YET",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "something happens (not implemented yet)",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": true,
+                    "parameterIndex": 1
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [
+            "NOT_IMPLEMENTED_YET",
+            "something happens (not implemented yet)"
+          ],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.report.text.PlainTextScenarioWriterTest",
+      "testMethodName": "data_tables_are_generated_in_text_reports",
+      "description": "data tables are generated in text reports",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Plain Text Report",
+          "description": "Plain text reports can be generated",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "Data Tables",
+          "description": "Data tables can be generated in reports",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario has parameters",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario has parameters",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "param1, param2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario has $ cases",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "cases",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has arguments",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has arguments",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg10, arg11",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has arguments",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has arguments",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg20, arg21",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has arguments",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "3",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has arguments",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg30, arg31",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "\u003cparam1\u003e",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "\u003cparam2\u003e",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "\n    | param1 | param2 |\n    +--------+--------+\n    |  arg10 |  arg11 |\n    |  arg20 |  arg21 |\n    |  arg30 |  arg31 |\n",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.report.text.PlainTextScenarioWriterTest",
+      "testMethodName": "arguments_are_correctly_printed_in_text_reports_for_data_tables",
+      "description": "arguments are correctly printed in text reports for data tables",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Plain Text Report",
+          "description": "Plain text reports can be generated",
+          "prependType": false
+        },
+        {
+          "name": "Feature",
+          "value": "Data Tables",
+          "description": "Data tables can be generated in reports",
+          "prependType": false
+        },
+        {
+          "name": "Issue",
+          "value": "#10",
+          "description": "Issue numbers correspond to Issues in GitHub",
+          "prependType": true
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario has parameters",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario has parameters",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "param1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario has $ cases",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "cases",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has arguments",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has arguments",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg10",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has a step $ with argument",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has a step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some arg step",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with argument",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg10",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has arguments",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has arguments",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg20",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has a step $ with argument",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has a step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some arg step",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with argument",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "arg20",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "all cases have a step $ with argument",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "all cases have a step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some step",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with argument",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "someArg",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some step \u0027someArg\u0027",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some arg step \u003cparam1\u003e",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    },
+    {
+      "className": "com.tngtech.jgiven.report.text.PlainTextScenarioWriterTest",
+      "testMethodName": "cases_are_generated_in_text_reports",
+      "description": "cases are generated in text reports",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "Plain Text Report",
+          "description": "Plain text reports can be generated",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a report model with one scenario",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a report model with one scenario",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the scenario has $ cases",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the scenario has",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "2",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "cases",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "case $ has a when step $ with argument",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "case",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "1",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "has a when step",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "some step",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                },
+                {
+                  "value": "with argument",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "someArg",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the plain text report is generated",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the plain text report is generated",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "Case 1:",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "Case 2:",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the report contains text",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the report contains text",
+                  "isIntroWord": false
+                },
+                {
+                  "value": "When some step \u0027someArg\u0027",
+                  "isIntroWord": false,
+                  "argumentInfo": {
+                    "isCaseArg": false,
+                    "parameterIndex": 0
+                  }
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "className": "com.tngtech.jgiven.testng.TestNgExecutionTest",
+  "scenarios": [
+    {
+      "className": "com.tngtech.jgiven.testng.TestNgExecutionTest",
+      "testMethodName": "the_error_message_of_a_failing_step_is_reported",
+      "description": "the error message of a failing step is reported",
+      "tags": [
+        {
+          "name": "Feature",
+          "value": "TestNG",
+          "description": "tests can be be executed with TestNG",
+          "prependType": false
+        }
+      ],
+      "notImplementedYet": false,
+      "parameterNames": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a failing test",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a failing test",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test is executed with TestNG",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test is executed with TestNG",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "the test result indicates a failure",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the test result indicates a failure",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            },
+            {
+              "name": "an error message is stored in the report",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an error message is stored in the report",
+                  "isIntroWord": false
+                }
+              ],
+              "status": "PASSED"
+            }
+          ],
+          "arguments": [],
+          "success": true
+        }
+      ]
+    }
+  ]
+}
