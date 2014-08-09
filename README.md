@@ -1,6 +1,6 @@
 # jgiven-search
 
-An HTML5 app to search for JGiven reports indexed by Elasticsearch
+An HTML5 app to search for [JGiven](http://jgiven.org) reports indexed by [Elasticsearch](http://elasticsearch.org)
 
 ## Setup
 
