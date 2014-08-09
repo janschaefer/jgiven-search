@@ -12,6 +12,7 @@ module.controller(
                      query: {
                          multi_match: {
                              query: $scope.search,
+                             type: 'most_fields',
                              fields: ['description', '_all']
                          }
                      },
