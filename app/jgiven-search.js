@@ -12,7 +12,8 @@ module.controller(
                      query: {
                          multi_match: {
                              query: $scope.search,
-                             type: 'most_fields',
+                             type: 'cross_fields',
+                             operator: 'and',
                              fields: ['description', '_all']
                          }
                      },
