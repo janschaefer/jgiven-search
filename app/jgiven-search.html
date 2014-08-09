@@ -53,6 +53,8 @@
                   <div class="panel-body">
                     <div class='scenario-content' ng-switch on="scenario._source.casesAsTable">
 
+                      <!-- DATA TABLES -->
+
                       <div ng-switch-when="true">
                         <div class='case'>
                           <ul class='steps'>
@@ -88,6 +90,9 @@
                           </table>
                         </div>
                       </div>
+
+
+                      <!-- NO DATA TABLES -->
 
                       <div ng-switch-default>
                         <div ng-repeat="case in scenario._source.scenarioCases">
