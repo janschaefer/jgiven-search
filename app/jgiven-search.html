@@ -38,10 +38,10 @@
             <div class="panel-group" id="accordion">
               <div ng-repeat="scenario in scenarios" class="panel panel-default">
                 <div class="panel-heading scenario-title">
-                  <a ng-show="scenario.hasOwnProperty('highlight')" data-toggle="collapse" data-parent="#accordion" href="#scenario{{$index}}">
+                  <a ng-show="scenario.highlight.hasOwnProperty('description')" data-toggle="collapse" data-parent="#accordion" href="#scenario{{$index}}">
                     <span class="highlighted" ng-bind-html="scenario.highlight.description[0]" />
                   </a>
-                  <a ng-hide="scenario.hasOwnProperty('highlight')" data-toggle="collapse" data-parent="#accordion" href="#scenario{{$index}}">
+                  <a ng-hide="scenario.highlight.hasOwnProperty('description')" data-toggle="collapse" data-parent="#accordion" href="#scenario{{$index}}">
                     <span>{{scenario._source.description}}</span>
                   </a>
                   <span class="tag-line">
@@ -58,7 +58,7 @@
                         <ul class='steps'>
                           <li ng-repeat="step in case.steps">
                             <span ng-repeat="word in step.words" ng-class="{introWord: $first, argument: word.argumentInfo, caseArgument: word.argumentInfo.isCaseArg}">
-                              {{word.value}}
+                              <span ng-bind-html="getHighlightedValue( scenario.highlight['scenarioCases.steps.words.value'], word.value)" />
                             </span>
                           </li>
                         </ul>

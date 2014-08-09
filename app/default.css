@@ -321,6 +321,13 @@ ul.steps li {
   padding-bottom:1px;
 }
 
+ul.steps li em {
+  font-style: normal;
+  background-color: yellow;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .introWord {
   display: inline-block;
   min-width: 3em;
