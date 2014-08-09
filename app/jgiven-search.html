@@ -35,6 +35,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="alert alert-warning" role="alert" ng-show="scenarios.length === 0">No matching scenarios found</div>
+
             <div class="panel-group" id="accordion">
               <div ng-repeat="scenario in scenarios" class="panel panel-default">
                 <div class="panel-heading scenario-title">
@@ -50,20 +51,63 @@
                 </div>
                 <div id="scenario{{$index}}" class="panel-collapse collapse {{$first && 'in'}}">
                   <div class="panel-body">
-                    <div class='scenario-content'>
-                      <div ng-repeat="case in scenario._source.scenarioCases">
-                        <span ng-show="scenario._source.scenarioCases.length > 1">
-                        Case {{case.caseNr}}:
-                        </span>
-                        <ul class='steps'>
-                          <li ng-repeat="step in case.steps">
-                            <span ng-repeat="word in step.words" ng-class="{introWord: $first, argument: word.argumentInfo, caseArgument: word.argumentInfo.isCaseArg}">
-                              <span ng-bind-html="getHighlightedValue( scenario.highlight['scenarioCases.steps.words.value'], word.value)" />
-                            </span>
-                          </li>
-                        </ul>
+                    <div class='scenario-content' ng-switch on="scenario._source.casesAsTable">
+
+                      <div ng-switch-when="true">
+                        <div class='case'>
+                          <ul class='steps'>
+                            <li ng-repeat="step in scenario._source.scenarioCases[0].steps">
+                              <span ng-repeat="word in step.words" ng-class="{introWord: $first}">
+
+                                <span ng-if="word.argumentInfo.isCaseArg" class="caseArgument">
+                                  &lt;{{ scenario._source.parameterNames[word.argumentInfo.parameterIndex] }}&gt;
+                                </span>
+
+                                <span ng-if="!word.argumentInfo.isCaseArg" ng-class="{argument: word.argumentInfo}">
+                                  <span ng-bind-html="getHighlightedValue( scenario.highlight['scenarioCases.steps.words.value'], word.value)" />
+                                </span>
+
+                              </span>
+                            </li>
+                          </ul>
+
+                          <h4>Cases:</h4>
+                          <table class='data-table'>
+                            <tr><th>#</th>
+                            <th ng-repeat="paramName in scenario._source.parameterNames">{{paramName}}</th>
+                            <th>Status</th>
+                            </tr>
+
+                            <tr ng-repeat="case in scenario._source.scenarioCases">
+                              <td>{{1+$index}}</td>
+                              <td ng-repeat="arg in case.arguments track by $index">{{arg}}</td>
+                              <td ng-if="case.success"><div class='passed'>Success</div></td>
+                              <td ng-if="!case.success"><div class='failed'>{{case.errorMessage}}</div></td>
+                            </tr>
+
+                          </table>
+                        </div>
                       </div>
-                    </div>
+
+                      <div ng-switch-default>
+                        <div ng-repeat="case in scenario._source.scenarioCases">
+                          <div class='case' ng-class="{passedCase: !scenario._source.scenarioCases.failed}">
+                            <span ng-show="scenario._source.scenarioCases.length > 1">
+                            Case {{case.caseNr}}:
+                            </span>
+                            <ul class='steps'>
+                              <li ng-repeat="step in case.steps">
+                                <span ng-repeat="word in step.words" ng-class="{introWord: $first, caseArgument: word.argumentInfo.isCaseArg, argument: word.argumentInfo && !word.argumentInfo.isCaseArg}">
+                                  <span ng-bind-html="getHighlightedValue( scenario.highlight['scenarioCases.steps.words.value'], word.value)" />
+                                </span>
+                              </li>
+                            </ul>
+                            <div ng-show="!scenario._source.scenarioCases.failed" class='topRight passed'>Passed</div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- scenario-content -->
                   </div>
                   <div class='scenario-footer'>{{scenario._source.className}}</div>
                 </div>
