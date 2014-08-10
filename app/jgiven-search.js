@@ -1,6 +1,7 @@
 var module = angular.module('JGivenApp',['ngSanitize']);
 
-var elasticSearchHost = 'localhost'
+var elasticSearchHost = 'http://localhost:9200'
+var index = 'testindex'
 
 module.controller(
     'ApplicationController',
@@ -27,7 +28,7 @@ module.controller(
              };
              $http({
                  method: 'POST',
-                 url: 'http://' + elasticSearchHost + ':9200/r14.9/scenario/_search?pretty=true',
+                 url: elasticSearchHost + '/' + index + '/scenario/_search?pretty=true',
                  data: data
              }).success( function(data) {
                  // console.log( JSON.stringify( data.hits.hits ) );

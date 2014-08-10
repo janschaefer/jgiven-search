@@ -9,11 +9,13 @@ import requests
 def updateScenario(scenario):
     name = scenario["testMethodName"]
     print "Uploading " + name
-    response = requests.put('http://' + IP + ':9200/r14.9/scenario/'+name, data=json.dumps(scenario))
+    response = requests.put( HOST + '/'+INDEX+'/scenario/'+name, data=json.dumps(scenario))
     print response.text
 
 
-IP = "localhost"
+
+HOST = "http://localhost:9200"
+INDEX = "testindex"
 inputdir = "."
 
 if len(sys.argv) > 1:

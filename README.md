@@ -10,6 +10,11 @@ $ ./elasticsearch/pullDockerImage.sh
 $ ./elasticsearch/runElasticsearch.sh
 ```
 
+### Create Elastisearch index
+```
+$ ./scripts/createIndex.sh
+```
+
 ### Upload JGiven JSON files to Elasticsearch
 
 ```
@@ -21,3 +26,6 @@ $ ./scripts/uploadToES.py testdata
 ```
 $ firefox app/jgiven-search.html
 ```
+
+## Live Demo
+[JGiven Scenarios](http://www.janschaefer.de/jgiven-search.html)
